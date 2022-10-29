@@ -333,3 +333,20 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 28rem;
   }
 }
+.chart{
+  width: 200px;
+  position: absolute;
+  right: 15%;
+  top: 55%;
+}
+.title{
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top:45% ;
+  right: 40%;
+}
+.chart .pourcentage{
+  color: green;
+  padding: 10px;
+}
