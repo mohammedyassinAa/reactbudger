@@ -8,8 +8,7 @@ import Expenselist from './components/ExpenseList';
 // what is the context provider => Context is primarily used when some data needs 
 // to be accessible by many components at different nesting levels
 import {GlobalContextProvider } from './context/GlobalState';
-import Graph from './components/Graph';
-
+import Graph from './components/GrapheIncome';
 const App = () => {
   return (
     <GlobalContextProvider>
@@ -20,8 +19,8 @@ const App = () => {
           <Incomelist />
           <Expenselist />
           <AddTransaction />
+          <Graph/>
         </div>
-        <Graph/>
       </div>
     </GlobalContextProvider>
   );

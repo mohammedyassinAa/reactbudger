@@ -1,5 +1,6 @@
 import React, { createContext, useReducer, useEffect } from "react";
 import AppReducer from "./AppReducer";
+import swal from 'sweetalert';
 
 const initialState = {
   incomeTransactions:
@@ -25,10 +26,27 @@ export const GlobalContextProvider = ({ children }) => {
   });
 
   const deleteTransaction = id => {
-    dispatch({
-      type: "DELETE_TRANSACTION",
-      payload: id
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover this imaginary file!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        swal("Poof! Your imaginary file has been deleted!", {
+          icon: "success",
+        });
+        dispatch({
+          type: "DELETE_TRANSACTION",
+          payload: id
+        });
+      } else {
+        swal("Your imaginary file is safe!");
+      }
     });
+    
   };
 
   const addIncome = incomeTransaction => {

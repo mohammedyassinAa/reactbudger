@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { GlobalContext } from "../context/GlobalState";
+import swal from 'sweetalert';
 
 const AddTransaction = () => {
   const { addIncome, addExpense } = useContext(GlobalContext);
@@ -25,7 +26,7 @@ const AddTransaction = () => {
         incomeText,
         incomeAmount: incomeAmount * 1,
       };
-
+      swal("Good job!", "You clicked the button!", "success");
       addIncome(newIncomeTransaction);
 
       setIncome({
@@ -55,7 +56,7 @@ const AddTransaction = () => {
         expenseText,
         expenseAmount: expenseAmount * 1,
       };
-
+      swal("Good job!", "You clicked the button!", "success");
       addExpense(newExpenseTransaction);
 
       setExpense({

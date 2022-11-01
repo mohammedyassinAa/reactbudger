@@ -23,15 +23,17 @@ const Balance = () => {
   return (
     <div className="balance">
       <h2>Your Balance</h2>
-      <h3>${(totalIncome - totalExpenses).toFixed(2)}</h3>
+      <h3>${(totalIncome - totalExpenses).toFixed(2)}</h3> 
       <div className="income-expense">
         <div className="plus">
-          <h3>Income</h3>
-          <p>+${totalIncome}</p>
+          <h3 className="incom">Income</h3>
+          <p className='p1'>+${totalIncome}</p>
         </div>
         <div className="minus">
-          <h3>Expenses</h3>
-          <p>-${totalExpenses}</p>
+          <div>
+            <h3 className="expens">Expenses</h3>
+            <p className='p2'>-${totalExpenses}</p>
+          </div>
         </div>
       </div>
     </div>
