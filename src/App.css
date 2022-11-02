@@ -1,4 +1,4 @@
-k@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Muli:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Muli:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap");
 
 * {
   margin: 0;
@@ -22,6 +22,7 @@ html {
 
 .app-wrapper {
   background-image: url(./background.jpeg);
+  background-repeat: 6;
   width: 90%;
   max-width: 150rem;
   height: 80vh;
@@ -360,7 +361,7 @@ html {
   font-size: 20px;
   position: absolute;
   top:40% ;
-  right: 35%;
+  right: 25%;
   font-weight: bold;
 }
 .chart .pourcentage{
@@ -371,7 +372,7 @@ html {
 .chart2{
   width: 200px;
   position: absolute;
-  left: 23%;
+  left: 20%;
   top: 55%;
 }
 .title2{
