@@ -26,7 +26,9 @@ const AddTransaction = () => {
         incomeText,
         incomeAmount: incomeAmount * 1,
       };
-      swal("Good job!", "You clicked the button!", "success");
+      swal({
+        icon: 'success'      
+      })
       addIncome(newIncomeTransaction);
 
       setIncome({
@@ -56,7 +58,10 @@ const AddTransaction = () => {
         expenseText,
         expenseAmount: expenseAmount * 1,
       };
-      swal("Good job!", "You clicked the button!", "success");
+      // swal("Good job!", "You clicked the button!", "success");
+      swal({
+        icon: 'success'      
+      })
       addExpense(newExpenseTransaction);
 
       setExpense({

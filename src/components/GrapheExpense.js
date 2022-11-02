@@ -4,13 +4,12 @@ import {Chart,ArcElement} from 'chart.js';
 import { GlobalContext } from "../context/GlobalState";
 
 Chart.register(ArcElement);
- 
 export default function GrapheExpense() {
     const { expenseTransactions } =useContext(GlobalContext);
     const data2 = expenseTransactions.map(item=> {return item.expenseAmount})
     const totale = data2.reduce((a,b)=>a+b,0)
     const config={
-         data : {
+        data : {
             datasets: [{
               data:data2 ,
               backgroundColor: [

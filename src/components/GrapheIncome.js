@@ -5,14 +5,14 @@ import { GlobalContext } from "../context/GlobalState";
 import GrapheExpense from './GrapheExpense';
 
 Chart.register(ArcElement);
- 
+
 
 export default function Graph() {
     const { incomeTransactions } =useContext(GlobalContext);
     const data = incomeTransactions.map(item=> {return item.incomeAmount})
     const totale = data.reduce((a,b)=>a+b,0)
     const config={
-         data : {
+        data : {
             datasets: [{
               data:data ,
               backgroundColor: [

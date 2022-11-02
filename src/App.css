@@ -7,10 +7,11 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .container {
-  background-image: url(./OIP.jfif);
+  background-image: url(https://www.istockphoto.com/photo/light-blue-studio-space-with-window-shadow-gm1062261710-283999900?phrase=simple%20background);
   width: 100%;
   height: 100vh;
   
@@ -51,7 +52,8 @@ html {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  color: #ffd416;
+  color:whitesmoke;
+  border-bottom: 2px solid whitesmoke;
   text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
@@ -62,20 +64,20 @@ html {
 }
 
 .balance h2 {
-  margin-left: 100px;
-  color: #444;
+  margin-left: 165px;
+  color: rgba(245, 245, 252, 0.911);
   font-family: "Baloo Da 2", serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 200;
   text-shadow: 0 0.2rem 0.5rem rgba(255, 23, 23, 0.4);
 }
 
 .balance h3 {
   margin-left: 100px;
-  color: #444;
+  color: rgba(68, 133, 170, 0.973);
   font-family: "Baloo Da 2", serif;
-  font-size: 3rem;
-  font-weight: 100;
+  font-size: 35px;
+  /* font-weight: 100; */
   text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
   
 }
@@ -84,7 +86,7 @@ html {
   display: flex;
   justify-content: space-evenly;
   font-family: "Muli", serif;
-  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0.2rem 0.5rem rgba(235, 224, 224, 0.4);
   text-align: right;
   position: absolute;
   top: 35px;
@@ -101,7 +103,7 @@ html {
 
 .minus {
   
-  color: #f53809;
+  color: #e25937cb;
 }
 .expens{
   position: absolute;
@@ -116,6 +118,7 @@ html {
   font-weight: 300;
   margin-bottom: 2rem;
   width: 100%;
+  color: rgba(245, 245, 245, 0.685);
 }
 
 .income-expense p {
@@ -127,6 +130,7 @@ html {
   position: absolute;
   right: 10%;
   top: 2em;
+  
 }
 .p2{
   position: relative;
@@ -203,16 +207,13 @@ html {
 }
 
 .income input[type="submit"] {
-  background-color: #0ed836;
+  background-color: #0ed836c4;
 }
 
 .expense input[type="submit"] {
-  background-color: #f53330;
+  background-color: #f53330dc;
 }
 
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
 
 .transactions {
   margin-top: 3rem;
@@ -276,11 +277,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .transactions-income .transaction {
-  background-color: #1ae041;
+  background-color: #0ed8368f;
 }
 
 .transactions-expense .transaction {
-  background-color: #f72522;
+  background-color: #f72622ad;
 }
 
 .transaction-text {
@@ -297,7 +298,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: transparent;
   font-size: 2rem;
   margin: 0 1rem;
-  color: #ff0400;
+  color: #f8332fc5;
   text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
   cursor: pointer;
   outline: none;
@@ -355,11 +356,11 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 55%;
 }
 .title{
-  color: rgb(7, 7, 7);
+  color: rgb(216, 204, 204);
   font-size: 20px;
   position: absolute;
   top:40% ;
-  right: 25%;
+  right: 35%;
   font-weight: bold;
 }
 .chart .pourcentage{
@@ -374,7 +375,7 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 55%;
 }
 .title2{
-  color: rgb(7, 7, 7);
+  color: rgb(216, 204, 204);
   font-size: 20px;
   position: absolute;
   top:40% ;
@@ -382,7 +383,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: bold;
 }
 .chart2 .pourcentage2{
-  color: green;
+  color: rgb(26, 148, 26);
   padding: 10px;
   font-weight: bold;
 }
